@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>  
+    <header class="background-personalizado text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 custom-header">
+                    <ul class="nav justify-content-end" id="block-color">
+                        <li class="nav-item"><a class="nav-link active texto-preto block-color" href="./cadastro.html">Encontre uma <b>AirTravel</b></a></li>
+                        <li class="nav-item"><a class="nav-link texto-preto block-color" href="#contato">Central de atendimento: <b>(xx) xxxx - xxxx</b>  |  Televendas: <b>xxxx xxx xxxx</b></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-12 custom-header">
+                    <h1 class="text-center" style="margin-top: 0.7rem;">AirTravel</h1>                  
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-5 col-sm-12 custom-header">
+                    <ul class="nav justify-content-around flex-column-editado align-items-center-mobile mobile-transparent-color" style="margin-top: 1rem;">
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#contato">Passagens</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#pacotes">Hotéis</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#pacotes">Pacotes</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#contato">Cruzeiros</a></li>
+                        <li class="nav-item"><a class="nav-link custom-active texto-branco" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 custom-header">
+                    <div class="input-group">
+                      <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search" style="border-right: none;">
+                      <div class="input-group-append">
+                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </header>
+    <article>
+        <section id="pacotes">
+            <div class="container line-bottom">
+                <div class="row align-mobile">
+                    <div class="col">
+                        <form class="form" id="formulario02">
+                            <span class="mensagem02"></span>
+                        <div class="col-md-12 col-sm-12">
+                            <h2>Para onde vamos?</h2>
+                        </div>
+                        <div class="col-md-12 col-sm-12 justify-content-start-mobile row">
+                                <div class="container col-md-10 col-sm-12 row">
+                                <div class="container col-md-12 col-sm-12 row custom-header">
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Origem</h6>
+                                    <div class="input-group">
+                                    <input class="form-control pacote" type="search" placeholder="De onde vai sair?" aria-label="Search" style="border-right: none;" required>
+                                    <div class="input-group-append">
+                                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Data de ida</h6>
+                                    <div class="input-group">
+                                        <input class="form-control" type="date" placeholder="Data de ida" required>     
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Data de volta</h6>
+                                    <div class="input-group">
+                                        <input class="form-control" type="date" placeholder="Data de volta" required>     
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="container col-md-12 col-sm-12 row custom-header">
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Destino</h6>
+                                    <div class="input-group">
+                                    <input class="form-control pacote" type="search" placeholder="Para onde vai ?" aria-label="Search" style="border-right: none;" required>
+                                    <div class="input-group-append">
+                                        <div class="input-group-text" style="background-color: #FFF"><i class="fas fa-search"></i></div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Reservas</h6>
+                                        <div class="input-group">
+                                            <input class="form-control" type="number" placeholder="Número de Quartos" required>
+                                            <div class="input-group-append">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 separador-mobile">
+                                    <h6>Quantas pessoas por quarto?</h6>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1" required>
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="opcao3">
+                                        <label class="form-check-label" for="inlineRadio3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="opcao3">
+                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                    </div>
+                                </div> 
+                                </div>
+                                </div>
+                            <button type="submit" class="btn btn-lg btn-success col-md-2 flex-center botao01"><p class="button01">Ver Pacotes</p></button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carousel-mobile">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/carousel/mobile/florida-carousel.jpg" class="d-block w-100" alt="Flórida">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Flórida</h2>
+                      <p>Passeio em família? Aqui não tem erro.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/carousel/mobile/italia-carousel.jpg" class="d-block w-100" alt="Itália">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Itália</h2>
+                      <p>Aposte nos clássicos.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/carousel/mobile/egito-carousel.jpg" class="d-block w-100" alt="Egito">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Egito</h2>
+                      <p>Mistério e arqueologia. A primeira maravilha do mundo antigo.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section id="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/carousel/pc/florida-carousel.jpg" class="d-block w-100" alt="Flórida">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Flórida</h2>
+                      <p>Passeio em família? Aqui não tem erro.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/carousel/pc/italia-carousel.jpg" class="d-block w-100" alt="Itália">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Itália</h2>
+                      <p>Aposte nos clássicos.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/carousel/pc/egito-carousel.jpg" class="d-block w-100" alt="Egito">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Egito</h2>
+                      <p>Mistério e arqueologia. A primeira maravilha do mundo antigo.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <section id="sobre">
+            <div class="container line-bottom">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <h2>Sobre Nós</h2>
+                        <p>Nós da AirTravel somos uma agência de viagens super preparada e estamos prontos para ajudar você a chegar onde deseja.</p>
+                        <p>Com uma frota de vans, ônibus e aviões, nós buscamos a excelência em tudo que levamos até você. Seja uma simples viagem ou um roteiro de semanas, estamos prontos para te levar do polo norte ao polo sul sem burocracias, tudo com máxima segurança, conforto e estilo. Além de tudo, de uma forma que cabe no seu bolso.</p>
+                        <a class="btn btn-lg btn-success mobile-response" href="#contato">Saiba Mais</a>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <img src="./images/sobre-nos.jpg" alt="Imagem Exemplo" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <div class="container line-bottom">
+                <div class="row">
+                    <div class="col">
+                        <h2>Vistas Inesquecíveis</h2>
+                        <div class="card">
+                            <img src="./images/tirol-italia.jpg" alt="Imagem Exemplo" class="img-fluid">
+                            <div class="card-body cor-base">
+                                <h5 class="card-title">Conheça a Italia</h5>
+                                <p class="card-text">Parque Natural Fanes-Sennes-Prags no sul de Tirol, Itália.</p>
+                                <a class="btn btn-primary mobile-response margin-button" data-bs-toggle="modal" data-bs-target="#modal-1">Pacotes</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./images/bradenton-florida.jpg" alt="Imagem Exemplo" class="img-fluid">
+                            <div class="card-body cor-base">
+                                <h5 class="card-title">Conheça a Flórida</h5>
+                                <p class="card-text">Bradenton Riverwalk é um espaço natural ao longo do rio Manatee, Flórida</p>
+                                <a class="btn btn-primary mobile-response" data-bs-toggle="modal" data-bs-target="#modal-2">Pacotes</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./images/tumba-egito.jpg" alt="Imagem Exemplo" class="img-fluid">
+                            <div class="card-body cor-base">
+                                <h5 class="card-title">Conheça o Egito</h5>
+                                <p class="card-text">Tumba de Ramsés é considerada uma das mais bonitas do Egito Antigo</p>
+                                <a class="btn btn-primary mobile-response" data-bs-toggle="modal" data-bs-target="#modal-3">Pacotes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-personalizado02" id="contato">
+            <div class="container space-contact">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Pacotes Personalizados</h2>
+                        <p>Planeje sua viagem, a seu modo. Nós cuidamos do resto.</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <form class="form" id="formulario">
+                            <span class="mensagem"></span>
+                            <div class="input-group">
+                                <input class="form-control obrigatorio" type="text" name="nome" placeholder="Digite seu nome" required>
+                            </div>
+
+                            <div class="input-group">
+                                <input class="form-control obrigatorio email" type="text" name="email" placeholder="Digite seu email" required>
+                            </div>
+
+                            <div class="input-group">
+                                <textarea class="form-control obrigatorio" name="descreva" rows="5" placeholder="Descreva aqui para nós a sua ideia, estaremos felizes em ajudar!"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-lg btn-success mobile-response">Quero viajar!</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <footer class="line-top">
+        <div class="container">
+        <h6>Desenvolvido por <strong>Breno Valentim</strong> aka <strong>Aslan</strong></h6>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">   
+                    <h5 class="modal-title">Rumo à Itália</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os pacotes especiais que separamos.</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Pacote</th>
+                                <th>À partir de</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Tour Itália Norte à Sul</th>
+                                <th>R$ 12.542</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                            <tr>
+                                <th>Tour Itália Essencial</th>
+                                <th>R$ 10.610</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                            <tr>
+                                <th>Tour Europa sob Rodas</th>
+                                <th>R$ 19.758</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12"><img src="./images/italia-01.jpg" class="img-fluid" alt="Imagem Exemplo"></div>
+                        <div class="col-md-4 col-sm-12"><img src="./images/italia-02.jpg" class="img-fluid" alt="Imagem Exemplo"></div>
+                        <div class="col-md-4 col-sm-12"><img src="./images/italia-03.jpg" class="img-fluid" alt="Imagem Exemplo"></div>               
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">   
+                    <h5 class="modal-title">Rumo à Flórida</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os pacotes especiais que separamos.</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Pacote</th>
+                                <th>À partir de</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>De Orlando a Miami</th>
+                                <th>R$ 7.862</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                            <tr>
+                                <th>Descobrindo a Disney</th>
+                                <th>R$ 9.411</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                            <tr>
+                                <th>Tour Costa Leste EUA</th>
+                                <th>R$ 17.653</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12"><img src="./images/florida-01.jpg" class="img-fluid" alt="Imagem Exemplo"></div>
+                        <div class="col-md-4 col-sm-12"><img src="./images/florida-02.jpg" class="img-fluid" alt="Imagem Exemplo"></div>
+                        <div class="col-md-4 col-sm-12"><img src="./images/florida-03.jpg" class="img-fluid" alt="Imagem Exemplo"></div>               
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">   
+                    <h5 class="modal-title">Rumo ao Egito</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os pacotes especiais que separamos.</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Pacote</th>
+                                <th>À partir de</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Tour Mitologia e História</th>
+                                <th>R$ 4.351</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                            <tr>
+                                <th>Tour Egito Essencial</th>
+                                <th>R$ 3.812</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                            <tr>
+                                <th>Tour Expedição do Faraó</th>
+                                <th>R$ 9.654</th>
+                                <th><button type="submit" class="btn btn-lg btn-success mobile-response">Ver</button></th>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12"><img src="./images/egito-01.jpg" class="img-fluid" alt="Imagem Exemplo"></div>
+                        <div class="col-md-4 col-sm-12"><img src="./images/egito-02.jpg" class="img-fluid" alt="Imagem Exemplo"></div>
+                        <div class="col-md-4 col-sm-12"><img src="./images/egito-03.jpg" class="img-fluid" alt="Imagem Exemplo"></div>               
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
